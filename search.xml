@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Jupyter-to-PDF</title>
-    <url>/2022/10/21/Jupyter-to-PDF/</url>
-    <content><![CDATA[<h2 id="Jupyter-to-PDF"><a href="#Jupyter-to-PDF" class="headerlink" title="Jupyter to PDF"></a>Jupyter to PDF</h2><ol>
-<li>如案例 01 爬取网站。输出结果极为庞大，导致typora无法打开，尽管最终导出PDF成功，其篇幅达到惊人的千页。需要预先处理：在Jupyter中隐藏输入代码，截图到typora，可完美解决。或者，在支持大文件的markdown软件中进行精简后，再使用typora打开导出。</li>
-<li>Jupyter可在markdown模式下保留截图，但由于无保存地址，导出为markdown文件时无法读取图片为满足所见即所得：将所有图片进行编辑。（需尝试）</li>
-<li>ctrl+p可直接进行打印操作，但其生成的PDF文件存在问题：无法右键直接访问网址、无法直接复制粘贴、无目录；</li>
-<li>markdown生成的PDF很多，但是要注意想好如何处理图片问题。</li>
-<li>在实际操作中，实为吃力不讨好，相较而言，ctrl+p或者markdown中间转译反倒实际的多。</li>
-</ol>
+    <title>统计学学习</title>
+    <url>/2022/10/21/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="第一章-统计、数据和计算机"><a href="#第一章-统计、数据和计算机" class="headerlink" title="第一章    统计、数据和计算机"></a>第一章    统计、数据和计算机</h1><p align = 'right'>统计思维总有一天会像读写一样成为一个有效率公民的必备能力——H.G.Wells<p>
+## 1.1    统计及其应用领域
+### 1.1.1    统计学研究什么
+
+
+<h4 id="1-什么是统计学"><a href="#1-什么是统计学" class="headerlink" title="1    什么是统计学"></a>1    什么是统计学</h4><p><strong>统计学</strong>是收集、处理、分析、解释数据并从数据中得出结论的科学。</p>
+<p>统计分析数据所用的方法大体上可分为<strong>描述统计</strong>(descriptive statistics)和<strong>推断统计</strong>(inferetial statistics)两大类。</p>
+<h4 id="2-统计学研究什么"><a href="#2-统计学研究什么" class="headerlink" title="2    统计学研究什么"></a>2    统计学研究什么</h4><h3 id="1-1-2-统计的应用"><a href="#1-1-2-统计的应用" class="headerlink" title="1.1.2    统计的应用"></a>1.1.2    统计的应用</h3><h2 id="1-2-怎样获得统计数据"><a href="#1-2-怎样获得统计数据" class="headerlink" title="1.2    怎样获得统计数据"></a>1.2    怎样获得统计数据</h2><h3 id="1-2-1-变量与数据"><a href="#1-2-1-变量与数据" class="headerlink" title="1.2.1    变量与数据"></a>1.2.1    变量与数据</h3><h3 id="1-2-2-数据的来源"><a href="#1-2-2-数据的来源" class="headerlink" title="1.2.2    数据的来源"></a>1.2.2    数据的来源</h3><h2 id="1-3-统计与计算机"><a href="#1-3-统计与计算机" class="headerlink" title="1.3    统计与计算机"></a>1.3    统计与计算机</h2><p>sdsd</p>
+<p><code>sdadaasdfasdf</code></p>
 ]]></content>
       <tags>
-        <tag>Jupyter</tag>
+        <tag>Statistics</tag>
       </tags>
   </entry>
   <entry>
@@ -34,20 +36,18 @@
 ]]></content>
   </entry>
   <entry>
-    <title>统计学学习</title>
-    <url>/2022/10/21/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="第一章-统计、数据和计算机"><a href="#第一章-统计、数据和计算机" class="headerlink" title="第一章    统计、数据和计算机"></a>第一章    统计、数据和计算机</h1><p align = 'right'>统计思维总有一天会像读写一样成为一个有效率公民的必备能力——H.G.Wells<p>
-## 1.1    统计及其应用领域
-### 1.1.1    统计学研究什么
-
-
-<h4 id="1-什么是统计学"><a href="#1-什么是统计学" class="headerlink" title="1    什么是统计学"></a>1    什么是统计学</h4><p><strong>统计学</strong>是收集、处理、分析、解释数据并从数据中得出结论的科学。</p>
-<p>统计分析数据所用的方法大体上可分为<strong>描述统计</strong>(descriptive statistics)和<strong>推断统计</strong>(inferetial statistics)两大类。</p>
-<h4 id="2-统计学研究什么"><a href="#2-统计学研究什么" class="headerlink" title="2    统计学研究什么"></a>2    统计学研究什么</h4><h3 id="1-1-2-统计的应用"><a href="#1-1-2-统计的应用" class="headerlink" title="1.1.2    统计的应用"></a>1.1.2    统计的应用</h3><h2 id="1-2-怎样获得统计数据"><a href="#1-2-怎样获得统计数据" class="headerlink" title="1.2    怎样获得统计数据"></a>1.2    怎样获得统计数据</h2><h3 id="1-2-1-变量与数据"><a href="#1-2-1-变量与数据" class="headerlink" title="1.2.1    变量与数据"></a>1.2.1    变量与数据</h3><h3 id="1-2-2-数据的来源"><a href="#1-2-2-数据的来源" class="headerlink" title="1.2.2    数据的来源"></a>1.2.2    数据的来源</h3><h2 id="1-3-统计与计算机"><a href="#1-3-统计与计算机" class="headerlink" title="1.3    统计与计算机"></a>1.3    统计与计算机</h2><p>sdsd</p>
-<p><code>sdadaasdfasdf</code></p>
+    <title>Jupyter-to-PDF</title>
+    <url>/2022/10/21/Jupyter-to-PDF/</url>
+    <content><![CDATA[<h2 id="Jupyter-to-PDF"><a href="#Jupyter-to-PDF" class="headerlink" title="Jupyter to PDF"></a>Jupyter to PDF</h2><ol>
+<li>如案例 01 爬取网站。输出结果极为庞大，导致typora无法打开，尽管最终导出PDF成功，其篇幅达到惊人的千页。需要预先处理：在Jupyter中隐藏输入代码，截图到typora，可完美解决。或者，在支持大文件的markdown软件中进行精简后，再使用typora打开导出。</li>
+<li>Jupyter可在markdown模式下保留截图，但由于无保存地址，导出为markdown文件时无法读取图片为满足所见即所得：将所有图片进行编辑。（需尝试）</li>
+<li>ctrl+p可直接进行打印操作，但其生成的PDF文件存在问题：无法右键直接访问网址、无法直接复制粘贴、无目录；</li>
+<li>markdown生成的PDF很多，但是要注意想好如何处理图片问题。</li>
+<li>在实际操作中，实为吃力不讨好，相较而言，ctrl+p或者markdown中间转译反倒实际的多。</li>
+</ol>
 ]]></content>
       <tags>
-        <tag>Statistics</tag>
+        <tag>Jupyter</tag>
       </tags>
   </entry>
 </search>
