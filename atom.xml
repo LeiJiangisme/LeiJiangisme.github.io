@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-09T09:20:55.162Z</updated>
+  <updated>2022-10-21T07:22:42.940Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2022/10/21/%E5%BB%BA%E7%AB%99/"/>
+    <id>http://example.com/2022/10/21/%E5%BB%BA%E7%AB%99/</id>
+    <published>2022-10-21T12:39:55.501Z</published>
+    <updated>2022-10-21T07:22:42.940Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><p>HEXO or typecho</p><h2 id="由此引申的问题"><a href="#由此引申的问题" class="headerlink" title="由此引申的问题"></a>由此引申的问题</h2><p>有无必要令全网的名称统一？</p><h2 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h2><h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h3><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p><ul><li><a href="http://nodejs.org/">Node.js</a></li><li><a href="http://git-scm.com/">Git</a></li></ul><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul><li><p>其文件的关联 by visual studio code</p></li><li><p>debug 调试模式</p></li><li><p>科学上网</p></li></ul><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ol><li>github上同步的网页主题与实际显示不一致</li><li>启动代码：hexo clean &amp; hexo g &amp; hexo server</li><li>总觉得Aurora的展现太为花哨</li><li>总觉得有些极客在命名项目时是相当的花哨</li></ol><h3 id="外观主题"><a href="#外观主题" class="headerlink" title="外观主题"></a>外观主题</h3><p>期望于简单的交互页面，类似阮一峰</p><p>就如同windows xp的展现那般吧</p><p>简单点，像steve网站那般</p><p>能不能再简单点</p><h3 id="热情减退"><a href="#热情减退" class="headerlink" title="热情减退"></a>热情减退</h3><p>建站的热情突然就消退了……</p><p>总该给自己增添些热量</p><h3 id="问题但重要的操作"><a href="#问题但重要的操作" class="headerlink" title="问题但重要的操作"></a>问题但重要的操作</h3><p>然后在本地的任意目录下，打开git bash，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:yanqingisme/yanqingisme.github.io.git</span><br></pre></td></tr></table></figure><p>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p><p>接下来在克隆到本地的yanqingisme.github.io中，把除了.git 文件夹外的所有文件都删掉</p><p>把之前我们写的博客源文件全部复制过来，除了.deploy_git。这里应该说一句，复制过来的源文件应该有一个.gitignore，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></table></figure><p>注意，如果你之前克隆过theme中的主题文件，<u>那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错</u>，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p><p>而后</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m add_branch</span><br><span class="line">git push </span><br></pre></td></tr></table></figure><p>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中node_modules、public、db.json已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yanqingisme&quot;</span><br><span class="line">git config --global user.email &quot;aspring00124@163.com&quot;</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://yanqingis.github.io </span><br></pre></td></tr></table></figure><p>fuck!</p><p>github need some time to deploy!</p><p>If there sometimes nothing works,just try to shout down everything.</p><p>当在一个教程里面浪费了较多的时间的时候，要及时止损，不然会困在令人困惑的代码里！</p><h3 id="ATTENTION"><a href="#ATTENTION" class="headerlink" title="ATTENTION!"></a>ATTENTION!</h3><p>在创建github repository时，不要设置点击添加<u>readme.md</u>文件，一旦添加，repo将会自动添加branch-main，这会给之后的操作带来极大的麻烦。</p><p>当然，对于熟悉git命令的应该不是什么问题，应该可在git bash中进行branch的增删操作。</p><h3 id="关于-configuraion-yml文件的操作"><a href="#关于-configuraion-yml文件的操作" class="headerlink" title="关于_configuraion.yml文件的操作"></a>关于_configuraion.yml文件的操作</h3><p>localhost与github page页面不一致，刷新！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;建站&quot;&gt;&lt;a href=&quot;#建站&quot; class=&quot;headerlink&quot; title=&quot;建站&quot;&gt;&lt;/a&gt;建站&lt;/h1&gt;&lt;p&gt;HEXO or typecho&lt;/p&gt;
+&lt;h2 id=&quot;由此引申的问题&quot;&gt;&lt;a href=&quot;#由此引申的问题&quot; class=&quot;headerl</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -38,6 +59,26 @@
   </entry>
   
   <entry>
+    <title></title>
+    <link href="http://example.com/2022/10/21/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://example.com/2022/10/21/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E5%AD%A6%E4%B9%A0/</id>
+    <published>2022-10-21T12:39:55.491Z</published>
+    <updated>2022-10-09T02:32:11.830Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一章-统计、数据和计算机"><a href="#第一章-统计、数据和计算机" class="headerlink" title="第一章    统计、数据和计算机"></a>第一章    统计、数据和计算机</h1><p align = 'right'>统计思维总有一天会像读写一样成为一个有效率公民的必备能力——H.G.Wells<p>## 1.1    统计及其应用领域### 1.1.1    统计学研究什么<h4 id="1-什么是统计学"><a href="#1-什么是统计学" class="headerlink" title="1    什么是统计学"></a>1    什么是统计学</h4><p><strong>统计学</strong>是收集、处理、分析、解释数据并从数据中得出结论的科学。</p><p>统计分析数据所用的方法大体上可分为<strong>描述统计</strong>(descriptive statistics)和<strong>推断统计</strong>(inferetial statistics)两大类。</p><h4 id="2-统计学研究什么"><a href="#2-统计学研究什么" class="headerlink" title="2    统计学研究什么"></a>2    统计学研究什么</h4><h3 id="1-1-2-统计的应用"><a href="#1-1-2-统计的应用" class="headerlink" title="1.1.2    统计的应用"></a>1.1.2    统计的应用</h3><h2 id="1-2-怎样获得统计数据"><a href="#1-2-怎样获得统计数据" class="headerlink" title="1.2    怎样获得统计数据"></a>1.2    怎样获得统计数据</h2><h3 id="1-2-1-变量与数据"><a href="#1-2-1-变量与数据" class="headerlink" title="1.2.1    变量与数据"></a>1.2.1    变量与数据</h3><h3 id="1-2-2-数据的来源"><a href="#1-2-2-数据的来源" class="headerlink" title="1.2.2    数据的来源"></a>1.2.2    数据的来源</h3><h2 id="1-3-统计与计算机"><a href="#1-3-统计与计算机" class="headerlink" title="1.3    统计与计算机"></a>1.3    统计与计算机</h2><p>sdsd</p><p><code>sdadaasdfasdf</code></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;第一章-统计、数据和计算机&quot;&gt;&lt;a href=&quot;#第一章-统计、数据和计算机&quot; class=&quot;headerlink&quot; title=&quot;第一章    统计、数据和计算机&quot;&gt;&lt;/a&gt;第一章    统计、数据和计算机&lt;/h1&gt;&lt;p align = &#39;right&#39;&gt;统计思维</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://example.com/2022/10/21/hello-world/"/>
     <id>http://example.com/2022/10/21/hello-world/</id>
@@ -50,47 +91,6 @@
       
       
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/2022/10/17/%E5%BB%BA%E7%AB%99/"/>
-    <id>http://example.com/2022/10/17/%E5%BB%BA%E7%AB%99/</id>
-    <published>2022-10-17T10:32:15.773Z</published>
-    <updated>2022-10-21T07:22:42.940Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><p>HEXO or typecho</p><h2 id="由此引申的问题"><a href="#由此引申的问题" class="headerlink" title="由此引申的问题"></a>由此引申的问题</h2><p>有无必要令全网的名称统一？</p><h2 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h2><h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h3><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p><ul><li><a href="http://nodejs.org/">Node.js</a></li><li><a href="http://git-scm.com/">Git</a></li></ul><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul><li><p>其文件的关联 by visual studio code</p></li><li><p>debug 调试模式</p></li><li><p>科学上网</p></li></ul><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ol><li>github上同步的网页主题与实际显示不一致</li><li>启动代码：hexo clean &amp; hexo g &amp; hexo server</li><li>总觉得Aurora的展现太为花哨</li><li>总觉得有些极客在命名项目时是相当的花哨</li></ol><h3 id="外观主题"><a href="#外观主题" class="headerlink" title="外观主题"></a>外观主题</h3><p>期望于简单的交互页面，类似阮一峰</p><p>就如同windows xp的展现那般吧</p><p>简单点，像steve网站那般</p><p>能不能再简单点</p><h3 id="热情减退"><a href="#热情减退" class="headerlink" title="热情减退"></a>热情减退</h3><p>建站的热情突然就消退了……</p><p>总该给自己增添些热量</p><h3 id="问题但重要的操作"><a href="#问题但重要的操作" class="headerlink" title="问题但重要的操作"></a>问题但重要的操作</h3><p>然后在本地的任意目录下，打开git bash，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:yanqingisme/yanqingisme.github.io.git</span><br></pre></td></tr></table></figure><p>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。</p><p>接下来在克隆到本地的yanqingisme.github.io中，把除了.git 文件夹外的所有文件都删掉</p><p>把之前我们写的博客源文件全部复制过来，除了.deploy_git。这里应该说一句，复制过来的源文件应该有一个.gitignore，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></table></figure><p>注意，如果你之前克隆过theme中的主题文件，<u>那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错</u>，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p><p>而后</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m add_branch</span><br><span class="line">git push </span><br></pre></td></tr></table></figure><p>这样就上传完了，可以去你的github上看一看hexo分支有没有上传上去，其中node_modules、public、db.json已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yanqingisme&quot;</span><br><span class="line">git config --global user.email &quot;aspring00124@163.com&quot;</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://yanqingis.github.io </span><br></pre></td></tr></table></figure><p>fuck!</p><p>github need some time to deploy!</p><p>If there sometimes nothing works,just try to shout down everything.</p><p>当在一个教程里面浪费了较多的时间的时候，要及时止损，不然会困在令人困惑的代码里！</p><h3 id="ATTENTION"><a href="#ATTENTION" class="headerlink" title="ATTENTION!"></a>ATTENTION!</h3><p>在创建github repository时，不要设置点击添加<u>readme.md</u>文件，一旦添加，repo将会自动添加branch-main，这会给之后的操作带来极大的麻烦。</p><p>当然，对于熟悉git命令的应该不是什么问题，应该可在git bash中进行branch的增删操作。</p><h3 id="关于-configuraion-yml文件的操作"><a href="#关于-configuraion-yml文件的操作" class="headerlink" title="关于_configuraion.yml文件的操作"></a>关于_configuraion.yml文件的操作</h3><p>localhost与github page页面不一致，刷新！</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;建站&quot;&gt;&lt;a href=&quot;#建站&quot; class=&quot;headerlink&quot; title=&quot;建站&quot;&gt;&lt;/a&gt;建站&lt;/h1&gt;&lt;p&gt;HEXO or typecho&lt;/p&gt;
-&lt;h2 id=&quot;由此引申的问题&quot;&gt;&lt;a href=&quot;#由此引申的问题&quot; class=&quot;headerl</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/2022/09/06/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://example.com/2022/09/06/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E5%AD%A6%E4%B9%A0/</id>
-    <published>2022-09-06T00:34:37.395Z</published>
-    <updated>2022-10-09T02:32:11.830Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="第一章-统计、数据和计算机"><a href="#第一章-统计、数据和计算机" class="headerlink" title="第一章    统计、数据和计算机"></a>第一章    统计、数据和计算机</h1><p align = 'right'>统计思维总有一天会像读写一样成为一个有效率公民的必备能力——H.G.Wells<p>## 1.1    统计及其应用领域### 1.1.1    统计学研究什么<h4 id="1-什么是统计学"><a href="#1-什么是统计学" class="headerlink" title="1    什么是统计学"></a>1    什么是统计学</h4><p><strong>统计学</strong>是收集、处理、分析、解释数据并从数据中得出结论的科学。</p><p>统计分析数据所用的方法大体上可分为<strong>描述统计</strong>(descriptive statistics)和<strong>推断统计</strong>(inferetial statistics)两大类。</p><h4 id="2-统计学研究什么"><a href="#2-统计学研究什么" class="headerlink" title="2    统计学研究什么"></a>2    统计学研究什么</h4><h3 id="1-1-2-统计的应用"><a href="#1-1-2-统计的应用" class="headerlink" title="1.1.2    统计的应用"></a>1.1.2    统计的应用</h3><h2 id="1-2-怎样获得统计数据"><a href="#1-2-怎样获得统计数据" class="headerlink" title="1.2    怎样获得统计数据"></a>1.2    怎样获得统计数据</h2><h3 id="1-2-1-变量与数据"><a href="#1-2-1-变量与数据" class="headerlink" title="1.2.1    变量与数据"></a>1.2.1    变量与数据</h3><h3 id="1-2-2-数据的来源"><a href="#1-2-2-数据的来源" class="headerlink" title="1.2.2    数据的来源"></a>1.2.2    数据的来源</h3><h2 id="1-3-统计与计算机"><a href="#1-3-统计与计算机" class="headerlink" title="1.3    统计与计算机"></a>1.3    统计与计算机</h2><p>sdsd</p><p><code>sdadaasdfasdf</code></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;第一章-统计、数据和计算机&quot;&gt;&lt;a href=&quot;#第一章-统计、数据和计算机&quot; class=&quot;headerlink&quot; title=&quot;第一章    统计、数据和计算机&quot;&gt;&lt;/a&gt;第一章    统计、数据和计算机&lt;/h1&gt;&lt;p align = &#39;right&#39;&gt;统计思维</summary>
       
     
     
